@@ -1,7 +1,5 @@
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import io.cucumber.java.PendingException;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -12,12 +10,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.List;
+
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -284,7 +281,7 @@ public class MyStepdefs {
     public void notAcceptingAll(String terms) {
         switch (terms) {
             case "understood":
-                // Account confirmation
+                // Account confirmations
                 clicker(By.cssSelector("label[for='sign_up_26']"));
                 // Code of ethics and conduct
                 clicker(By.cssSelector("label[for='fanmembersignup_agreetocodeofethicsandconduct']"));
