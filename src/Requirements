@@ -1,0 +1,21 @@
+Requirements for Basketball England Registrationpage
+
+Write and execute testcases using Cucumber and Selenium on the Basketball England page.
+Every testcase shall have atleast one Junit-assert
+The feature-file should be created using BDD* and be explained.
+The feature-file should be connected to Selenium Webdriver-code
+
+The testcases must contain atleast one Scenario Outline.
+The testcases should be run on atleast two different browsers.
+Create atleast one private method that is using explicit wait.
+
+The testcase shall cover:
+ * Creating an account successfully
+ * Create an account - missing lastname
+ * Create an account - Not matching password
+ * Create an account - Terms and conditions not accepted
+
+
+ * Behavioral Driven Deployment
+
+
