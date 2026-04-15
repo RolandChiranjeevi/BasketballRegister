@@ -1,3 +1,4 @@
+package org.example;
 
 import org.junit.platform.suite.api.ConfigurationParameter;
 import org.junit.platform.suite.api.IncludeEngines;
@@ -12,7 +13,7 @@ import static io.cucumber.junit.platform.engine.Constants.FEATURES_PROPERTY_NAME
 @SelectClasspathResource("features")
 @ConfigurationParameter(
         key = GLUE_PROPERTY_NAME,
-        value = "src/test/java"
+        value = "org.example"
 )
 @ConfigurationParameter(
         key = FEATURES_PROPERTY_NAME,
