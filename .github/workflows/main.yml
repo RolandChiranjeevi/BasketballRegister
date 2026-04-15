@@ -16,5 +16,8 @@ jobs:
           java-version: '24'
 
       - name: Build and test
-        run: mvn clean install
+        run: |
+          mvn clean install
+          mvn clean test
+        
 
