@@ -15,6 +15,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.net.URL;
 import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -205,14 +206,15 @@ public class MyStepdefs {
     public void theUserUses(String browser) {
         if (browser.equalsIgnoreCase("chrome")) {
             ChromeOptions options = new ChromeOptions();
-            options.addArguments("--headless=new");
+            //options.addArguments("--headless=new");
             driver = new ChromeDriver(options);
         } else {
             FirefoxOptions options = new FirefoxOptions();
             options.addArguments("--headless");
             driver = new FirefoxDriver(options);
         }
-        driver.get("file:///Users/johan/Downloads/Register/registrering.html");
+        URL url= getClass().getClassLoader().getResource("registrering.html");
+        driver.get(url.toString());
     }
 
     @When("Accepts all terms by using keyboard only")
