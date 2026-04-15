@@ -206,7 +206,7 @@ public class MyStepdefs {
     public void theUserUses(String browser) {
         if (browser.equalsIgnoreCase("chrome")) {
             ChromeOptions options = new ChromeOptions();
-            //options.addArguments("--headless=new");
+            options.addArguments("--headless=new");
             driver = new ChromeDriver(options);
         } else {
             FirefoxOptions options = new FirefoxOptions();
